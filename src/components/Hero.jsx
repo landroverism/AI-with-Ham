@@ -7,8 +7,16 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative bg-cover bg-center py-16 lg:py-24" style={{ backgroundImage: "url('/images/ai-ham.jpg')", backgroundPosition: 'center 3%' }}>
-      <div className="absolute inset-0 bg-black/60"></div>
+    <section 
+      id="home" 
+      className="relative min-h-screen bg-center bg-no-repeat py-16 lg:py-24" 
+      style={{ 
+        backgroundImage: "url('/images/ai-ham.jpg')", 
+        backgroundPosition: 'center 20%',
+        backgroundSize: 'auto 100%'
+      }}
+    >
+      <div className="absolute inset-0 bg-black/40"></div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
