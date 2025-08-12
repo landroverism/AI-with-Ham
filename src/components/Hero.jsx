@@ -9,11 +9,11 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="relative min-h-screen bg-center bg-no-repeat py-16 lg:py-24" 
+      className="relative min-h-screen bg-no-repeat py-16 lg:py-24 bg-gray-800" 
       style={{ 
         backgroundImage: "url('/images/ai-ham.jpg')", 
-        backgroundPosition: 'center 20%',
-        backgroundSize: 'auto 100%'
+        backgroundPosition: window.innerWidth > 1024 ? 'center 35%' : 'center 20%',
+        backgroundSize: window.innerWidth > 1024 ? '120% auto' : window.innerWidth > 768 ? 'cover' : 'contain'
       }}
     >
       <div className="absolute inset-0 bg-black/40"></div>
